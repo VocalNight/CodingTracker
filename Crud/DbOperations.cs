@@ -28,6 +28,8 @@ namespace CodingTracker.Crud
 
                 command.ExecuteNonQuery();
                 connection.Close();
+
+                Console.WriteLine("Command executed");
             }
         }
 
