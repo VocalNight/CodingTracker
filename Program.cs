@@ -1,14 +1,3 @@
-﻿using CodingTracker.Crud;
-using CodingTracker.Model;
-using CodingTracker.Console;
+﻿using CodingTracker.Operations;
 
-DbOperations operations = new DbOperations();
-
-ConsoleOperations console = new ConsoleOperations(operations);
-console.GetMainInput();
-
-
-
-
-
-
+ConsoleOperations.GetMainInput();
