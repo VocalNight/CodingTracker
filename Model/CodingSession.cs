@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CodingTracker.Model {
+﻿namespace CodingTracker.Model {
     public class CodingSession {
 
-        public CodingSession(string start, string end) { 
+        public CodingSession(string id, string start, string end) {
+            Id = id;
             StartTime = start;
             EndTime = end;
         }
 
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string StartTime { get; set; }
         public string EndTime { get; set; }
 
